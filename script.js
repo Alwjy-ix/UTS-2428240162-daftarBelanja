@@ -39,14 +39,11 @@ function tampil(){
     hasil.forEach(element => {
         document.getElementById("daftar-belanja").innerHTML += 
         `<div class="col-lg-3 col-md-6 mb-3">
-            <div class="card p-2">
-                <img src="${element.image}" class="card-img-top" object-fit:contain style="height:200px;">
                 <div class="card-body">
                     <h4 class="text-primary">${element.nama}</h4>
                     <h6 class="text-primary">${element.barang}</h6>
                     <h6 class="text-danger">${element.jumlah}</h6>
                 </div>
-            </div>
         </div>`
     });
 }
