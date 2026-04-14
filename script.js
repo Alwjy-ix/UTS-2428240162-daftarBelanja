@@ -1,5 +1,4 @@
-let nama = document.getElementById("nama");
-let barang = document.getElementById("barang");
+let namBarang = document.getElementById("namaBarang");
 let jumlah = document.getElementById("jumlah");
 let keterangan = document.getElementById("keterangan");
 
@@ -16,8 +15,7 @@ function simpan() {
 
     //simpan value npm dan nama ke dalam object data
     data.push({
-        nama: nama.value,
-        barang: barang.value,
+        namaBarang: namaBarang.value,
         jumlah: jumlah.value,
         keterangan: keterangan.value
     })
@@ -42,8 +40,7 @@ function tampil() {
         document.getElementById("daftar-belanja").innerHTML +=
             `<div class="col-lg-3 col-md-6 mb-3">
                 <div class="card-body">
-                    <h4 class="text-success">${element.nama}</h4>
-                    <h5 class="text-primary">${element.barang}</h5>
+                    <h4 class="text-success">${element.namaBarang}</h4>
                     <p class="text-primary-subtle">${element.keterangan}</p>
                     <h6 class="text-danger">${element.jumlah}</h6>
                 </div>
