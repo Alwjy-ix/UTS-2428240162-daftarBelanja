@@ -32,15 +32,15 @@ function simpan() {
 }
 
 
-function tampil(){
-     //panggil dulu local storage nya
+function tampil() {
+    //panggil dulu local storage nya
     let hasil = JSON.parse(localStorage.getItem("daftar"))
     // clear element ul id = list-mhs
     document.getElementById("daftar-belanja").innerHTML = ""
     //lakukan perulangan (foreach)
     hasil.forEach(element => {
-        document.getElementById("daftar-belanja").innerHTML += 
-        `<div class="col-lg-3 col-md-6 mb-3">
+        document.getElementById("daftar-belanja").innerHTML +=
+            `<div class="col-lg-3 col-md-6 mb-3">
                 <div class="card-body">
                     <h4 class="text-success">${element.nama}</h4>
                     <h5 class="text-primary">${element.barang}</h5>
